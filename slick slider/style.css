@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f1b519;
+}
+.center{
+    width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 5px 5px 20px 0px #00000054;
+}
+.testimonial-card{
+    padding: 30px;
+    background: #fff;
+    width: 450px;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.arrow img{
+    cursor: pointer;
+    width: 40px;
+}
+.user-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+.user-details h4{
+    font-family: 'Inter' , sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    text-align: center;
+    width: 300px;
+    text-transform: capitalize;
+}
+.user-details h2{
+    font-family: 'Inter' , sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px 0px 5px;
+    text-transform: capitalize;
+}
+.user-details h6{
+    font-family: 'Inter' , sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: .5;
+}
+.center::after{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: -175px;
+    width: 200px;
+    height: 150px;
+    background-image: url("img/quote.png");
+    background-repeat: no-repeat;
+    z-index: -1;
+}

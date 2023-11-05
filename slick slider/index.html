@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial cards</title>
+    <link rel="stylesheet" href="slick.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="cards-container center">
+     <div class="testimonial-card">
+
+        <div class="arrow">
+            <div class="left-arrow">
+                <img src="img/left.png" alt="">
+            </div>
+            <div class="right-arrow">
+                <img src="img/right.png" alt="">
+            </div>
+        </div>
+
+        <div class="user-img">
+            <img src="img/user1.png" alt="">
+        </div>
+
+        <div class="user-details">
+            <h4>so thoughtful and wise, and vulnerable in sharing her own challenges with me, dani is wonderful!</h4>
+            <h2>anette black</h2>
+            <h6>director, producer</h6>
+        </div>
+
+     </div>
+
+     <!-- second -->
+     <div class="testimonial-card">
+
+        <div class="arrow">
+            <div class="left-arrow">
+                <img src="img/left.png" alt="">
+            </div>
+            <div class="right-arrow">
+                <img src="img/right.png" alt="">
+            </div>
+        </div>
+
+        <div class="user-img">
+            <img src="img/user2.png" alt="">
+        </div>
+
+        <div class="user-details">
+            <h4>so thoughtful and wise, and vulnerable in sharing her own challenges with me, dani is wonderful!</h4>
+            <h2>george blize</h2>
+            <h6>director, producer</h6>
+        </div>
+        
+     </div>
+     <!-- third -->
+     <div class="testimonial-card">
+
+        <div class="arrow">
+            <div class="left-arrow">
+                <img src="img/left.png" alt="">
+            </div>
+            <div class="right-arrow">
+                <img src="img/right.png" alt="">
+            </div>
+        </div>
+
+        <div class="user-img">
+            <img src="img/user3.png" alt="">
+        </div>
+
+        <div class="user-details">
+            <h4>so thoughtful and wise, and vulnerable in sharing her own challenges with me, dani is wonderful!</h4>
+            <h2>francis</h2>
+            <h6>director, producer</h6>
+        </div>
+        
+     </div>
+   </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script>
+        $(".cards-container").slick({
+            infinite:true,
+            slideToShow:1,
+            slideToScroll:1,
+            autoplay:true,
+            dots:false,
+            arrows:true,
+            prevArrow:$('.left-arrow'),
+            nextArrow:$('.right-arrow'),
+        });
+    </script>
+</body>
+</html>
